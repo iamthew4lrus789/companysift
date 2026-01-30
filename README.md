@@ -20,7 +20,7 @@ A CLI tool that automatically discovers websites for UK companies from registry 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/companysift.git
+git clone https://github.com/iamthew4lrus789/companysift
 cd companysift
 
 # Create virtual environment (recommended)
