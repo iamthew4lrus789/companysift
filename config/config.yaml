@@ -1,0 +1,36 @@
+# Company Website Discovery Tool
+
+search:
+  provider: "duckduckgo"
+  api_key: "${DUCKDUCKGO_API_KEY}"  # Set environment variable
+  rate_limit: 4.5  # requests per second (safety margin for 5/sec limit)
+  timeout: 30  # seconds
+  max_retries: 3
+  retry_delay: 2  # seconds (exponential backoff base)
+
+scoring:
+  min_confidence: 65  # minimum confidence threshold (0-100) - increased for stricter filtering
+  weights:
+    domain_match: 0.5      # weight for domain-company name match - INCREASED
+    tld_relevance: 0.3     # weight for UK TLD preference - INCREASED  
+    search_position: 0.1   # weight for search result ranking - DECREASED
+    title_match: 0.1       # weight for page title match
+  
+processing:
+  batch_size: 50  # companies per batch
+  max_candidates: 3  # maximum URLs per company
+  
+filtering:
+  blocklist:
+    - "companycheck.co.uk"
+    - "globaldatabase.com" 
+    - "companieshouse.gov.uk"
+    - "endole.co.uk"
+    - "checkdirector.co.uk"
+    - "efinder.uk"
+    - "service.gov.uk"
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/company_sift.log"

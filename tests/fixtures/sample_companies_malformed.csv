@@ -1,0 +1,6 @@
+CompanyNumber,CompanyName,Postcode,SICCodes
+12345678,ACME Corporation,SW1A 1AA,70100
+,Malformed Company,,invalid
+87654321,Global Enterprises Ltd,EC1A 1BB,62020
+
+11223344,Tech Solutions PLC,M1 1CC,62030

@@ -1,0 +1,109 @@
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets.yaml
+config.local.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.venv/
+venv/
+ENV/
+env/
+
+# Test artifacts
+coverage/
+.nyc_output/
+test-results/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.history/
+.claude/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build outputs
+out/
+*.o
+*.a
+*.exe
+*.dll
+*.dylib
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+.~lock.*
+
+# Project-specific
+output/*.csv
+data/*.csv
+data/*.json
+!data/samples/*.csv
+!data/samples/*.md

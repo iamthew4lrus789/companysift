@@ -1,0 +1,31 @@
+search:
+  provider: "duckduckgo"
+  api_key: "test_key"  # Test key for testing
+  rate_limit: 4.5
+  timeout: 30
+  max_retries: 3
+  retry_delay: 2
+
+scoring:
+  min_confidence: 50
+  weights:
+    domain_match: 0.4
+    tld_relevance: 0.2
+    search_position: 0.3
+    title_match: 0.1
+  
+processing:
+  batch_size: 50
+  max_candidates: 3
+  
+filtering:
+  blocklist:
+    - "companycheck.co.uk"
+    - "globaldatabase.com"
+    - "companieshouse.gov.uk"
+    - "endole.co.uk"
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/company_sift.log"

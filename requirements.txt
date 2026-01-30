@@ -1,0 +1,20 @@
+# Company Website Discovery Tool - Python Dependencies
+
+# Core Dependencies
+pandas>=2.0.0
+requests>=2.31.0
+pyyaml>=6.0
+fuzzywuzzy>=0.18.0
+python-dotenv>=1.0.0
+
+# Development Dependencies
+pytest>=7.4.0
+pytest-mock>=3.11.0
+pytest-cov>=4.1.0
+flake8>=6.0.0
+black>=23.0.0
+
+# Optional Dependencies (for enhanced functionality)
+# rapidfuzz>=3.0.0  # Faster fuzzy matching alternative
+# sqlalchemy>=2.0.0  # If we need more complex database operations
+# click>=8.0.0  # Enhanced CLI framework (if argparse isn't sufficient)
