@@ -40,7 +40,7 @@ cp .env.example .env
 ### API Key Setup
 
 1. Sign up at [RapidAPI](https://rapidapi.com/)
-2. Subscribe to the [DuckDuckGo Web Search API](https://rapidapi.com/duckduckgo/api/duckduckgo8)
+2. Subscribe to the [DuckDuckGo Web Search API](https://rapidapi.com/Glavier/api/duckduckgo8)
 3. Copy your API key from the RapidAPI dashboard
 4. Add it to your `.env` file:
 
